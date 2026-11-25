@@ -1,13 +1,10 @@
-import { useState } from 'react';
+import MazeGame from './game/MazeGame.jsx';
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <main className="app">
-      <h1>Way To Home Puzzle</h1>
-      <p>React client is running.</p>
-      <button onClick={() => setCount((c) => c + 1)}>Clicked {count} times</button>
+      <h1>Way To Home</h1>
+      <MazeGame />
     </main>
   );
 }
